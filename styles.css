@@ -1,0 +1,83 @@
+/* common style for all pages */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* index and outro pages specific styles */
+body.index .next-link,
+body.outro .next-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+body.index .next-link:hover,
+body.outro .next-link:hover {
+    text-decoration: underline;
+}
+
+/* math, reading, and exploration pages specific styles */
+body.math,
+body.reading,
+body.exploration {
+    text-align: center;
+}
+
+body.math .navigation-link,
+body.reading .navigation-link,
+body.exploration .navigation-link {
+    display: inline-block;
+    margin: 20px; 
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+body.math .navigation-link:hover,
+body.reading .navigation-link:hover,
+body.exploration .navigation-link:hover {
+    text-decoration: underline;
+}
+
+body.math .tooltip, 
+body.reading .tooltip,
+body.exploration .tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: white;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+body.math .tooltip:hover .tooltiptext, 
+body.reading .tooltip:hover .tooltiptext,
+body.exploration .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* position both charts side by side with the width */
+#charts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#math-chart 
+#reading-chart {
+    width: 80%; 
+}
+
+/* highlight and underline kaggle dataset link in blue */
+a.kaggle-link {
+    color: blue;
+    text-decoration: none;
+}
+
+a.kaggle-link:hover {
+    text-decoration: underline;
+}
