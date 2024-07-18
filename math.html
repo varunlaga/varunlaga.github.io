@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <title>Narrative Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+</head>
+
+<body class="math">
+    <h1 style="text-align: center;">Distribution of Average Math Scores</h1>
+
+    <p style="text-align: left;">
+        The side by side bar chart below displays the students average math scores based on their gender and parental education levels. 
+        You can hover over each of the bars to learn about the students gender, parental level of education, and average math score.
+    </p>
+
+    <br>
+
+    <p style="text-align: left;">
+        Based on this side by side bar chart, you can notice that students average math scores tend to be high for both genders when their parents have
+        the highest level of education but there are some exceptions. For example, male students have the highest average math score
+        of 75.94 when their parental level is bachelor's degree while female students have the highest average math score of 71.48 when
+        their parental level is master's degree as highlighted by the annotations below.
+    </p>
+
+    <br>
+
+    <div id="math-chart"></div>
+    <script src="math.js"></script>
+
+    <p style="text-align: left;">
+        Now, you learned about the students average math scores based on their gender and parental education levels. Let's examine another similar side by side bar
+        chart but with students average reading scores. You can click on Next or Previous if you want to reread the previous page below.
+    </p>
+
+    <a href="index.html" class="navigation-link">Previous</a>
+    <a href="reading.html" class="navigation-link">Next</a>
+
+</body>
+</html>
