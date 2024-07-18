@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Narrative Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body class="exploration">
+    <h1 style="text-align: center;">Try Yourself</h1>
+
+    <p style="text-align: left;">
+        Now, it's your turn to play around with the data! Select any of the racial/ethnicity groups below to notice how it affects the 
+        average scores for both charts.
+    </p>
+
+    <p style="text-align: center;">
+        Hover over the bars based on your selection!
+    </p>
+
+    <br>
+
+    <div id="dropdown_container">
+        <select id="race-ethnicity-dropdown" aria-label="Select Race/Ethnicity Group">
+            <option value="Select">Select Race/Ethnicity Group</option>
+            <option value="group A">Group A</option>
+            <option value="group B">Group B</option>
+            <option value="group C">Group C</option>
+            <option value="group D">Group D</option>
+            <option value="group E">Group E</option>
+        </select>
+    </div>
+    <script src="exploration.js"></script>
+
+    <br>
+
+    <div id="charts-container">
+        <div id="math-chart"></div>
+        <div id="reading-chart"></div>
+    </div>
+    
+    <script src="math.js"></script>
+    <script src="reading.js"></script>
+
+    <p style="text-align: left;">
+        Great, you had a chance to play around with the data! You can click on Next to read the final page or Previous if you want to reread the previous page below.
+    </p>
+
+    <a href="reading.html" class="navigation-link">Previous</a>
+    <a href="outro.html" class="navigation-link">Next</a>
+
+</body>
+</html>
