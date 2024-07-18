@@ -16,6 +16,7 @@ body.outro .next-link {
 
 body.index .next-link:hover,
 body.outro .next-link:hover {
+    text-align: center;
     text-decoration: underline;
 }
 
